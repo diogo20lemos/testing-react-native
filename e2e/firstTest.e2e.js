@@ -30,6 +30,10 @@ describe('Example', () => {
         await element(by.label('Select Scanner')).tap()
         await expect( element(by.label('Barcode Scanner')) ).toBeVisible()   
         await element(by.text('Close')).tap() 
+        await expect( element(by.label('Barcode Scanner')) ).toBeNotVisible()
     });
       
+
+
+    
 });
